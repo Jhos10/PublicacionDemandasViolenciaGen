@@ -1,0 +1,32 @@
+{% for publicacion in publicacionesDenuncias %}
+  <article class="Publicacion">
+    <section class="Detalles-Denuncia">
+      <h1 class=" Titulo-Publicacion ">Titulo: {{publicacion.titulo}}</h1>
+      <p class=" Descripcion-Denuncia ">Descripcion: {{publicacion.descripcion}}</p>
+      <p class=" Fecha-Denuncia ">Fecha de denuncia: {{publicacion.fecha}}</p>
+      <p class=" Ubicacion-Fecha ">Ubicacion: {{publicacion.Ubicacion}}</p>
+    </section>
+    <section class="Victima"> 
+      <p class=" Nombre-Victima ">Nombre de la victima: {{publicacion.nombreVictima}}</p>
+      <p class=" PrimerApellido-Victima ">Primer apellido de la victima: {{publicacion.primerApellidoVictima}}</p>
+      <p class=" SegundoApellido-Victima ">Segundo apellido de la victima: {{publicacion.SegundoApellidoVictima}}</p>
+      <p class=" Edad-Victima ">Edad de la victima: {{publicacion.edadVictima}}</p>
+      <p class=" TI-Victima ">Tipo de documento: {{publicacion.tipoDocumentoVictima}}</p>
+      <p class=" NumDocumento-Victima ">Numero de documento: {{publicacion.numeroDocumentoVictima}}</p>
+      <p class=" CiudadNa-Victima ">ciudad de nacimiento: {{publicacion.ciudadNacimientoVictima}}</p>
+      <p class=" CiudadRe-Victima ">ciudad de residencia: {{publicacion.ciudadRecidenciaVictima}}</p>
+    </section>
+    <section class="Agresor">
+      <p class=" Nombre-Agresor ">Nombre del agresor: {{publicacion.nombreAgresor}}</p>
+      <p class=" ApellidoPrimer-Agresor ">Primer apellido del agresor: {{publicacion.primerApellidoAgresor}}</p>
+      <p class=" SegundoApellido-Agresor">Segundo apellido del agresor: {{publicacion.segundoApellidoAgresor}}</p>
+      <p class=" Ti-Documento-Agresor ">Tipo de documento: {{publicacion.tipoDocumentoAgresor}}</p>
+      <p class=" NumDocumento-Agresor ">Numero de documento: {{publicacion.numeroDocumentoAgresor}}</p>
+      <p class=" CiudadNa-Agresor ">Ciudad de nacimiento: {{publicacion.ciudadNacimientoAgresor}}</p>
+      <p class=" CiudadRe-Agresor ">ciudad de residencia: {{publicacion.ciudadResidenciaAgresor}}</p>
+      <!-- <p>ciudad de : {{publicacion.antecedentesPenalesAgresor}}</p> -->
+      <p></p>
+    </section>
+
+  </article>
+{% endfor %}
